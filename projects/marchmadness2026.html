@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>March Madness Predictor | Drew Villhard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white font-sans">
+
+    <nav class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-xl font-bold text-blue-400 hover:text-blue-300 transition">
+                Drew Villhard
+            </a>
+
+            <div class="flex items-center space-x-6 text-sm font-medium">
+                <a href="../index.html#projects" class="text-slate-300 hover:text-blue-400 transition">Projects</a>
+                <a href="#" class="text-slate-300 hover:text-blue-400 transition">Experience</a>
+                <a href="https://github.com/drewvillhard" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg transition">
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="max-w-4xl mx-auto px-6 py-12">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-white">
+            March Madness 2026 Predictor
+        </h1>
+        <div class="flex flex-wrap gap-2 mb-8">
+            <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm font-mono border border-blue-700">RStudio</span>
+            <span class="bg-emerald-900 text-emerald-200 px-3 py-1 rounded-full text-sm font-mono border border-emerald-700">Linear Regression</span>
+            <span class="bg-red-900 text-red-200 px-3 py-1 rounded-full text-sm font-mono border border-red-700">XGBoost</span>
+            <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded-full text-sm font-mono border border-purple-700">Random Forest</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-20 space-y-12">
+        
+        <section>
+            <h2 class="text-2xl font-bold mb-4 border-b border-slate-700 pb-2">Overview</h2>
+            <p class="text-slate-300 leading-relaxed">
+                The NCAA Tournament is one of the most unpredictable events in sports. This project aimed to evaluate how different Machine Learning architectures handle the "madness." I scraped historical data and used the 2026 tournament results as the final test set to compare model accuracy across three distinct approaches.
+            </p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                <h3 class="font-bold text-blue-400 mb-2">1. Data Cleaning</h3>
+                <p class="text-sm text-slate-400">Pulled college basketball data over the last 10 years from hoopR and filtered down to just the stats I wanted to collect.</p>
+            </div>
+            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                <h3 class="font-bold text-blue-400 mb-2">2. Feature Engineering</h3>
+                <p class="text-sm text-slate-400">Used the basic stats gathered to find offensive and defensive efficiencies, possesions per game, etc. Then built a master array finding cumulative sums to prevent data leakage.</p>
+            </div>
+            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                <h3 class="font-bold text-blue-400 mb-2">3. Model Testing</h3>
+                <p class="text-sm text-slate-400">Compared Linear Regression, Random Forest, and XGBoost to determine the optimal balance of bias and variance.</p>
+            </div>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-4 border-b border-slate-700 pb-2">Gallery</h2>
+            
+        </section>

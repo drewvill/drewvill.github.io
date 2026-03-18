@@ -16,10 +16,7 @@
 
             <div class="flex items-center space-x-6 text-sm font-medium">
                 <a href="../index.html#projects" class="text-slate-300 hover:text-blue-400 transition">Projects</a>
-                <a href="#" class="text-slate-300 hover:text-blue-400 transition">Experience</a>
-                <a href="https://github.com/drewvillhard" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg transition">
-                    GitHub
-                </a>
+                <a href="../index.html#experience" class="text-slate-300 hover:text-blue-400 transition">Experience</a>
             </div>
         </div>
     </nav>
@@ -41,25 +38,79 @@
         <section>
             <h2 class="text-2xl font-bold mb-4 border-b border-slate-700 pb-2">Overview</h2>
             <p class="text-slate-300 leading-relaxed">
-                The NCAA Tournament is one of the most unpredictable events in sports. This project aimed to evaluate how different Machine Learning architectures handle the "madness." I scraped historical data and used the 2026 tournament results as the final test set to compare model accuracy across three distinct approaches.
+                The NCAA Tournament is one of the most unpredictable events in sports. As the head of the Men's Basketball Sports Analytics Club at Notre Dame, I wanted to approach this issue with the help of machine learning and analytics. My team and I decided we would treat the project as a research and testing opporitunity to try three differnet machine learning models (lm, xgb, and rf) and report on our results. We used a three step process to clean data, develop our models, and report our findings.
             </p>
         </section>
 
         <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
                 <h3 class="font-bold text-blue-400 mb-2">1. Data Cleaning</h3>
-                <p class="text-sm text-slate-400">Pulled college basketball data over the last 10 years from hoopR and filtered down to just the stats I wanted to collect.</p>
+                <p class="text-sm text-slate-400">Pulled college basketball data over the last 10 years from hoopR and filtered down to 19 different metrics to train the models on. The final data set found the stat differnetials to give the models details on how the teams matchup with each other.</p>
             </div>
             <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
-                <h3 class="font-bold text-blue-400 mb-2">2. Feature Engineering</h3>
-                <p class="text-sm text-slate-400">Used the basic stats gathered to find offensive and defensive efficiencies, possesions per game, etc. Then built a master array finding cumulative sums to prevent data leakage.</p>
+                <h3 class="font-bold text-blue-400 mb-2">2. Model Testing</h3>
+                <p class="text-sm text-slate-400">trained Linear Regression, Random Forest, and XGBoost models with the cleaned data, then tested the models on the NCAA Tournament games from 2025. Games from the last 3 years and tournament games were weighted higher in the training.</p>
             </div>
             <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
-                <h3 class="font-bold text-blue-400 mb-2">3. Model Testing</h3>
-                <p class="text-sm text-slate-400">Compared Linear Regression, Random Forest, and XGBoost to determine the optimal balance of bias and variance.</p>
+                <h3 class="font-bold text-blue-400 mb-2">3. Evaluate Performance</h3>
+                <p class="text-sm text-slate-400">Each model's bracket was entered into NCAA's Bracket Challenge which scored each bracket as the tournament goes on. The models were also used to predict the margin of all 64 games, then compared to the real game outcomes.</p>
             </div>
+        </section>
+
+        <p class="text-slate-300 mt-4 leading-relaxed">
+            You can find the four brakets made by the models and the documents explaining the project and research in more detail below. 
+        </p>
 
         <section>
-            <h2 class="text-2xl font-bold mb-4 border-b border-slate-700 pb-2">Gallery</h2>
+            <h2 class="text-2xl font-bold mb-4 border-b border-slate-700 pb-2">Brackets</h2>
+            <div class="max-w-2xl mx-auto rounded-xl overflow-hidden border border-slate-700 shadow-lg">
+                <img 
+                    src="../graphics/bracket_lm.png" 
+                    alt="Linear Model Bracket"
+                    class="w-full"
+                />
+            </div>
+            <div class="max-w-2xl mx-auto rounded-xl overflow-hidden border border-slate-700 shadow-lg">
+                <img 
+                    src="../graphics/bracket_xgb.png" 
+                    alt="Gradient-Boosted Bracket"
+                    class="w-full"
+                />
+            </div>
+            <div class="max-w-2xl mx-auto rounded-xl overflow-hidden border border-slate-700 shadow-lg">
+                <img 
+                    src="../graphics/bracket_rf.png" 
+                    alt="Random Forest Bracket"
+                    class="w-full"
+                />
+            </div>
+            <div class="max-w-2xl mx-auto rounded-xl overflow-hidden border border-slate-700 shadow-lg">
+                <img 
+                    src="../graphics/bracket_ensemble.png" 
+                    alt="Ensemble Bracket"
+                    class="w-full"
+                />
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-4 border-b border-slate-700 pb-2">Documents</h2>
             
+            <div class="flex items-center justify-between p-4 rounded-lg bg-slate-800 border border-slate-700 hover:border-blue-500 transition-colors">
+                <div class="flex items-center space-x-4">
+                    <div class="p-3 bg-blue-500/10 rounded-lg">
+                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-medium">March Madness 2026 Project Documentation</h3>
+                        <p class="text-sm text-slate-400">Google Doc • 12 Pages</p>
+                    </div>
+                </div>
+                
+                <a href="https://docs.google.com/document/d/1CmvoLYYEgFjNtG_VkEarcI9PNkvDlAeaDNcuV77CTtA/edit?usp=sharing" target="_blank" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-md text-sm font-semibold transition-all">
+                    Open Document
+                </a>
+            </div>
         </section>

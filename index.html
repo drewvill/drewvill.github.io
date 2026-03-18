@@ -21,9 +21,35 @@
         </div>
     </nav>
 
-    <section class="py-20 text-center">
-        <h2 class="text-5xl font-extrabold mb-4">DREW VILLHARD</h2>
-        <p class="text-xl text-slate-400">Computer Science - University of Notre Dame</p>
+    <section class="bg-slate-800 pt-20 px-8 flex flex-col md:flex-row items-center justify-center gap-12 relative overflow-hidden">
+    
+        <div class="absolute inset-0 z-0">
+            <div class="absolute w-64 h-64 bg-blue-500 rounded-full opacity-10 -top-20 -left-20"></div>
+            
+            <div class="absolute w-[80%] h-[150%] bg-slate-900 opacity-20 -top-[10%] -right-[20%] rotate-[-15deg]"></div>
+            
+            <div class="absolute bottom-10 right-10 flex gap-1 opacity-20">
+                <div class="w-1 h-32 bg-slate-600 rounded"></div>
+                <div class="w-1 h-24 bg-slate-600 rounded"></div>
+                <div class="w-1 h-16 bg-slate-600 rounded"></div>
+            </div>
+        </div>
+
+        <div class="text-center md:text-left py-10 relative z-10">
+            <h2 class="text-5xl md:text-7xl font-black text-white tracking-tighter mb-4">
+                DREW VILLHARD
+            </h2>
+            <p class="text-xl md:text-2xl text-slate-400 font-light">
+                Computer Science <span class="text-slate-600 px-2">/</span> University of Notre Dame
+            </p>
+        </div>
+
+        <div class="flex-shrink-0 self-end relative z-10">
+            <img src="graphics/drewvillhardimage.png" 
+                alt="Drew Villhard" 
+                class="w-72 md:w-96 h-auto block">
+        </div>
+
     </section>
 
     <section class="py-16">
@@ -100,34 +126,76 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <a href="projects/marchmadness2026.html" class="block group">
-                <div class="bg-slate-800 p-6 rounded-lg hover:ring-2 ring-blue-500 transition h-full">
-                    <h4 class="text-xl font-bold mb-2">March Madness 2026 Predictor</h4>
-                    <p class="text-slate-400 mb-4">Tested three different machine learning models on the 2026 NCAA Tournament to see which method performs the best.</p>
-                    <span class="text-xs font-mono bg-slate-700 px-2 py-1 rounded text-blue-300">RStudio</span>
+                <div class="bg-slate-800 p-6 rounded-lg hover:ring-2 ring-blue-500 transition h-full overflow-hidden">
+                    
+                    <div class="h-28 flex justify-center items-center overflow-hidden mb-6 bg-slate-700/50 rounded-md">
+                        <img src="graphics/marchmadnessthumb.png" 
+                            alt="March Madness Predictor" 
+                            class="w-auto h-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300">
+                    </div>
+
+                    <div class="">
+                        <h4 class="text-xl font-bold mb-2">March Madness 2026 Predictor</h4>
+                        <p class="text-slate-400 mb-4">Tested three different machine learning models on the 2026 NCAA Tournament to see which method performs the best.</p>
+                        <span class="text-xs font-mono bg-slate-700 px-2 py-1 rounded text-blue-300">RStudio</span>
+                    </div>
                 </div>
             </a>
 
             <a href="projects/siuereports.html" class="block group">
-                <div class="bg-slate-800 p-6 rounded-lg hover:ring-2 ring-blue-500 transition h-full">
-                    <h4 class="text-xl font-bold mb-2">SIUE Men's Basketball Pregame Reports</h4>
-                    <p class="text-slate-400 mb-4">Analyzed opponent's strengths and weaknesses using machine learning to create reports for SIUE's coaches to plan for upcoming matchups</p>
-                    <span class="text-xs font-mono bg-slate-700 px-2 py-1 rounded text-blue-300">RStudio</span>
+                <div class="bg-slate-800 p-6 rounded-lg hover:ring-2 ring-blue-500 transition h-full overflow-hidden flex flex-col">
+                    
+                    <div class="h-28 flex justify-center items-center overflow-hidden mb-6 bg-slate-700/50 rounded-md">
+                        <img src="graphics/siuethumb.png" 
+                            alt="SIUE Men's Basketball Reports" 
+                            class="w-auto h-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300">
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">SIUE Men's Basketball Pregame Reports</h4>
+                        <p class="text-slate-400 mb-4">Analyzed opponent's strengths and weaknesses using machine learning to create reports for SIUE's coaches to plan for upcoming matchups</p>
+                        <span class="text-xs font-mono bg-slate-700 px-2 py-1 rounded text-blue-300">RStudio</span>
+                    </div>
                 </div>
             </a>
             
             <a href="projects/nbaratings.html" class="block group">
-                <div class="bg-slate-800 p-6 rounded-lg hover:ring-2 ring-blue-500 transition h-full">
-                    <h4 class="text-xl font-bold mb-2">NBA Player Performance Ratings</h4>
-                    <p class="text-slate-400 mb-4">Program that runs through the play-by-play data of each NBA game and rates each player's performance</p>
-                    <span class="text-xs font-mono bg-slate-700 px-2 py-1 rounded text-blue-300">RStudio</span>
+                <div class="bg-slate-800 p-6 rounded-lg hover:ring-2 ring-blue-500 transition h-full overflow-hidden flex flex-col">
+                    
+                    <div class="h-28 flex justify-center items-center overflow-hidden mb-6 bg-slate-700/50 rounded-md">
+                        <img src="graphics/nbathumb.png" 
+                            alt="NBA Performance Ratings" 
+                            class="w-auto h-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300">
+                    </div>
+
+                    <div class="flex-grow">
+                        <h4 class="text-xl font-bold mb-2">NBA Player Performance Ratings</h4>
+                        <p class="text-slate-400 mb-4">Program that runs through the play-by-play data of each NBA game and rates each player's performance</p>
+                    </div>
+
+                    <div>
+                        <span class="text-xs font-mono bg-slate-700 px-2 py-1 rounded text-blue-300">RStudio</span>
+                    </div>
                 </div>
             </a>
 
             <a href="projects/golfgame.html" class="block group">
-                <div class="bg-slate-800 p-6 rounded-lg hover:ring-2 ring-blue-500 transition h-full">
-                    <h4 class="text-xl font-bold mb-2">Golf Video Game For Class</h4>
-                    <p class="text-slate-400 mb-4">Fundamentals of Computing final project using C to create a video game of my choosing. Check out a video of the gameplay!</p>
-                    <span class="text-xs font-mono bg-slate-700 px-2 py-1 rounded text-blue-300">C</span>
+                <div class="bg-slate-800 p-6 rounded-lg hover:ring-2 ring-blue-500 transition h-full overflow-hidden flex flex-col">
+                    
+                    <div class="h-28 flex justify-center items-center overflow-hidden mb-6 bg-slate-700/50 rounded-md">
+                        <img src="graphics/golfthumb.png" 
+                            alt="Golf Video Game" 
+                            class="w-auto h-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300">
+                    </div>
+
+                    <div class="flex-grow">
+                        <h4 class="text-xl font-bold mb-2">Golf Video Game For Class</h4>
+                        <p class="text-slate-400 mb-4">Fundamentals of Computing final project using C to create a video game of my choosing. Check out a video of the gameplay!</p>
+                    </div>
+
+                    <div>
+                        <span class="text-xs font-mono bg-slate-700 px-2 py-1 rounded text-blue-300">C</span>
+                    </div>
                 </div>
             </a>
         </div>

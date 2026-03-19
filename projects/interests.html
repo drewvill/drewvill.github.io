@@ -40,15 +40,17 @@
             
             <div class="flex flex-wrap gap-3 justify-center md:justify-start">
                 <span class="bg-purple-900/50 text-purple-200 px-4 py-1.5 rounded-full text-sm font-mono border border-purple-700/50 backdrop-blur-sm">Python</span>
-                <span class="bg-red-900/50 text-red-200 px-4 py-1.5 rounded-full text-sm font-mono border border-red-700/50 backdrop-blur-sm">numpy</span>
-                <span class="bg-blue-900/50 text-blue-200 px-4 py-1.5 rounded-full text-sm font-mono border border-blue-700/50 backdrop-blur-sm">pandas</span>
+                <span class="bg-red-900/50 text-red-200 px-4 py-1.5 rounded-full text-sm font-mono border border-red-700/50 backdrop-blur-sm">NumPy</span>
+                <span class="bg-blue-900/50 text-blue-200 px-4 py-1.5 rounded-full text-sm font-mono border border-blue-700/50 backdrop-blur-sm">Pandas</span>
+                <span class="bg-green-900/50 text-green-200 px-4 py-1.5 rounded-full text-sm font-mono border border-green-700/50 backdrop-blur-sm">Pillow</span>
+
             </div>
         </div>
 
         <div class="flex-shrink relative z-10 w-full md:w-auto flex justify-center">
             <img src="../graphics/interests.png" 
                 alt="Golf Video Game" 
-                class="w-full max-w-[18rem] md:max-w-sm h-auto block rounded-2xl shadow-2xl border border-slate-700/50 transform md:-rotate-2 transition-transform duration-500">
+                class="w-full max-w-[18rem] md:max-w-sm h-auto block rounded-2xl shadow-2xl border border-slate-700/50 transform md:rotate-2 transition-transform duration-500">
         </div>
 
     </section>
@@ -58,10 +60,10 @@
         <section>
             <h2 class="text-2xl font-bold mb-4 border-b mt-4 border-slate-700 pb-2">Overview</h2>
             <p class="text-slate-300 leading-relaxed">
-                I had my family and friends fill out a form where they rank my top 17 interests 1-17. Based on these results I created this image. The larger the logo, the more interested I am in the subject. 
+                I had my family and friends fill out a form where they ranked my top 17 interests in order, 1-17. Based on these results I created this image, where the size of each logo is inversely proportional to the numerical rank (so #1 appears largest). 
             </p>
             <p class="text-slate-300 mt-4 leading-relaxed">
-                Using python, I took the data from my survey, created a data frame with a row for each interest and its average rating. I printed the logo onto the image, sized based on the average rating.
+                Using Python, I took the data from my survey, created a DataFrame with a row for each interest and its average rating. The final visualization was generated via the Pillow library, with the scale of each logo determined by its average rating.
             </p>
         </section>
 
